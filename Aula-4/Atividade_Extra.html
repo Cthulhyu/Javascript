@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+</head>
+<body>
+    <script>
+        function derivada(f, h = 1e-5){
+            return function(x){
+                return (f(x + h) - f(x - h))/ (2 * h);
+            };
+        }
+    const f = x => x **2 + 3 * x + 2;
+    const df = derivada(f);
+
+    console.log(df(2));
+    </script>
+</body>
+</html>

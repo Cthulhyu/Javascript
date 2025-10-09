@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos</title>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <= 5; i++){
+            console.log("Número: ", i);
+        }
+
+        let frutas = ["Maça", "Banana", "Laranja", "abacaxi"]
+
+        for(let i = 0; i<= 4; i++){
+            console.log("Frutas: ", frutas[i]);
+        }
+        let contagem = 5;
+        while(contagem > 0){
+            console.log("contando: ", contagem);
+            contagem--;
+        }
+        console.log("Fim da contagem");
+        for(let i = 1; i <=7; i++){
+            if(i === 4){
+                continue;
+            }
+            console.log("Teste de continue, 4 não aparece", i);
+        }
+        function dobro(n){
+            console.log(n*2);
+        }
+        dobro(5);
+    </script>
+</body>
+</html>
