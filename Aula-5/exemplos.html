@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Olá</h1>
+    <button id="btn-titulo">botao</button>
+    <input type="num1" type="number" placeholder="num1">
+    <input type="num2" type="number" placeholder="num2">
+    <script>
+        let titulo = document.getElementById("titulo");
+        //titulo.innerHTML = "<i>Ola, mundo</i>"
+
+        let btn = document.getElementById("btn-titulo");
+
+        btn.addEventListener('click', function(){
+            titulo.innerHTML = "<i> ola, fui alterado</i>";
+        });
+    </script>
+</body>
+</html>
